@@ -68,7 +68,7 @@ function Home() {
                       In this section you can learn more about the Universidad
                       Tecnologica de bolivar.
                     </p>
-                    <Button className="btn-link" color="success" href="#pablo">
+                    <Button className="btn-link" color="success" href="/aboututb">
                       Visit
                     </Button>
                   </div>
@@ -82,7 +82,11 @@ function Home() {
                   <div className="description">
                     <h4 className="info-title">International Cooperation</h4>
                     <p>In this section you can learn...</p>
-                    <Button className="btn-link" color="success" href="#pablo">
+                    <Button
+                      className="btn-link"
+                      color="success"
+                      href="/intenacionalcoop"
+                    >
                       Visit
                     </Button>
                   </div>
@@ -96,7 +100,11 @@ function Home() {
                   <div className="description">
                     <h4 className="info-title">The UTB at glance</h4>
                     <p>In this section you can learn...</p>
-                    <Button className="btn-link" color="success" href="#pablo">
+                    <Button
+                      className="btn-link"
+                      color="success"
+                      href="/utbatglance"
+                    >
                       Visit
                     </Button>
                   </div>
@@ -110,7 +118,11 @@ function Home() {
                   <div className="description">
                     <h4 className="info-title">Programs for foreigners</h4>
                     <p>In this section you can learn...</p>
-                    <Button className="btn-link" color="success" href="#pablo">
+                    <Button
+                      className="btn-link"
+                      color="success"
+                      href="/programff"
+                    >
                       Visit
                     </Button>
                   </div>
@@ -127,7 +139,11 @@ function Home() {
                       In this section you can learn more about Cartagena
                       loading.
                     </p>
-                    <Button className="btn-link" color="success" href="#pablo">
+                    <Button
+                      className="btn-link"
+                      color="success"
+                      href="/aboutctg"
+                    >
                       Visit
                     </Button>
                   </div>
@@ -160,7 +176,7 @@ function Home() {
                   <div className="description">
                     <h4 className="info-title">Quiz</h4>
                     <p>In this section you can learn...</p>
-                    <Button className="btn-link" color="success" href="#pablo">
+                    <Button className="btn-link" color="success" href="/quiz">
                       visit
                     </Button>
                   </div>
@@ -174,7 +190,11 @@ function Home() {
                   <div className="description">
                     <h4 className="info-title">About the team</h4>
                     <p>In this section you can learn...</p>
-                    <Button className="btn-link" color="success" href="#pablo">
+                    <Button
+                      className="btn-link"
+                      color="success"
+                      href="/aboutteam"
+                    >
                       Visit
                     </Button>
                   </div>
@@ -391,7 +411,7 @@ function Home() {
                   />
                   <Row>
                     <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
+                      <Button className="btn-fill" color="success" size="lg">
                         Send Message
                       </Button>
                     </Col>

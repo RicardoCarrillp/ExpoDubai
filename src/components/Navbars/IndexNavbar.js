@@ -144,19 +144,19 @@ function IndexNavbar() {
               </NavLink>
             </NavItem> */}
             <NavItem>
-              <NavLink href="#" target="_blank">
+              <NavLink href="/aboututb" target="_blank">
                 <i className="nc-icon nc-alert-circle-i" /> About the university
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" target="_blank">
+              <NavLink href="/utbatglance" target="_blank">
                 <i className="nc-icon nc-chart-pie-36" /> The UTB at glance
               </NavLink>
             </NavItem>
 
             <NavItem>
               <NavLink
-                href="#"
+                href="/aboutctg"
                 target="_blank"
               >
                 <i className="nc-icon nc-album-2" /> About Cartagena
@@ -166,7 +166,7 @@ function IndexNavbar() {
               <Button
                 className="btn-round"
                 color="primary"
-                href="#"
+                href="/quiz"
                 target="_blank"
               >
                 <i className="nc-icon nc-book-bookmark"></i> Quiz

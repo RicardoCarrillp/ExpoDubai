@@ -103,63 +103,24 @@ function FinalNavbar() {
                 <i className="nc-icon nc-book-bookmark" /> UTB
               </NavLink>
             </NavItem>
-            {/*
+
             <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://twitter.com/utboficial"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.facebook.com/utboficial"
-                target="_blank"
-                title="Like us on Facebook"
-              >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/utboficial/?hl=es-la"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
-              </NavLink>
-            </NavItem>
-            */}
-            <NavItem>
-              <NavLink href="#" target="_blank">
+              <NavLink href="/aboututb">
                 <i className="nc-icon nc-alert-circle-i" /> About the university
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" target="_blank">
+              <NavLink href="/utbatglance">
                 <i className="nc-icon nc-chart-pie-36" /> The UTB at glance
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" target="_blank">
+              <NavLink href="/aboutctg">
                 <i className="nc-icon nc-album-2" /> About Cartagena
               </NavLink>
             </NavItem>
             <NavItem>
-              <Button
-                className="btn-round"
-                color="success"
-                href="#"
-                target="_blank"
-              >
+              <Button className="btn-round" color="success" href="/quiz">
                 <i className="nc-icon nc-book-bookmark"></i> Quiz
               </Button>
             </NavItem>
