@@ -36,7 +36,7 @@ import {
 
 // core components
 import FinalNavbar from "components/Navbars/FinalNavbar.js";
-import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
+import UtbBannerHeader from "components/Headers/utbbannerHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 
 function ProfilePage() {
@@ -58,7 +58,7 @@ function ProfilePage() {
   return (
     <>
       <FinalNavbar />
-      <ProfilePageHeader />
+      <UtbBannerHeader />
       <div className="section profile-content">
         <Container>
           <div className="owner">

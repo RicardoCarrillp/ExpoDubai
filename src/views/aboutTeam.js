@@ -18,35 +18,84 @@ import {
 } from "reactstrap";
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import FinalNavbar from "components/Navbars/FinalNavbar.js";
+
+import AboutTeamHeader from "components/Headers/aboutTeamHeader.js";
+import DemoFooter from "components/Footers/DemoFooter";
 
 function AboutTeam() {
 
   return (
     <>
-      <IndexNavbar />
-      
+      <FinalNavbar />
+      <AboutTeamHeader />
+
       <div className="section section-dark text-center">
+        <br />
+        <br />
+
         <Container>
-          <h2 className="title">Let's talk about us</h2>
+          <h2 className="title">Let's talk about us👦🧑👨‍🦱🧑</h2>
           <Row>
-            <Col md="4">
+            <Col md="3">
               <Card className="card-profile card-plain">
                 <div className="card-avatar">
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <a
+                    href="https://www.linkedin.com/in/ricardo-carrillo-082117129/"
+                    onClick={(e) => e.preventDefault()}
+                  >
                     <img
                       alt="..."
-                      src={
-                        require("assets/img/faces/clem-onojeghuo-3.jpg").default
-                      }
+                      src={require("assets/img/yo2.jpg").default}
                     />
                   </a>
                 </div>
                 <CardBody>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <div className="author">
-                      <CardTitle tag="h4">Henry Ford</CardTitle>
-                      <h6 className="card-category">Product Manager</h6>
+                      <CardTitle tag="h4">Ricardo Carrillo</CardTitle>
+                      <h6 className="card-category">Developer</h6>
+                    </div>
+                  </a>
+                  <p className="card-description text-center">
+                    I love Spider-Man And coding.
+                  </p>
+                </CardBody>
+                <CardFooter className="text-center">
+                  <Button
+                    className="btn-just-icon btn-neutral"
+                    color="link"
+                    href="https://www.instagram.com/rickicarrillo22/?hl=es"
+                  >
+                    <i className="fa fa-instagram" />
+                  </Button>
+
+                  <Button
+                    className="btn-just-icon btn-neutral ml-1"
+                    color="link"
+                    href="https://www.linkedin.com/in/ricardo-carrillo-082117129/"
+                    
+                  >
+                    <i className="fa fa-linkedin" />
+                  </Button>
+                </CardFooter>
+              </Card>
+            </Col>
+            <Col md="3">
+              <Card className="card-profile card-plain">
+                <div className="card-avatar">
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <img
+                      alt="..."
+                      src={require("assets/img/isaac.jpeg").default}
+                    />
+                  </a>
+                </div>
+                <CardBody>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <div className="author">
+                      <CardTitle tag="h4">Isaac Castelar</CardTitle>
+                      <h6 className="card-category">Developer</h6>
                     </div>
                   </a>
                   <p className="card-description text-center">
@@ -83,30 +132,27 @@ function AboutTeam() {
                 </CardFooter>
               </Card>
             </Col>
-            <Col md="4">
+            <Col md="3">
               <Card className="card-profile card-plain">
                 <div className="card-avatar">
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <img
                       alt="..."
-                      src={
-                        require("assets/img/faces/joe-gardner-2.jpg").default
-                      }
+                      src={require("assets/img/elian.jpg").default}
                     />
                   </a>
                 </div>
                 <CardBody>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <div className="author">
-                      <CardTitle tag="h4">Sophie West</CardTitle>
-                      <h6 className="card-category">Designer</h6>
+                      <CardTitle tag="h4">Elian Vega</CardTitle>
+                      <h6 className="card-category">Developer</h6>
                     </div>
                   </a>
                   <p className="card-description text-center">
-                    A group becomes a team when each member is sure enough of
-                    himself and his contribution to praise the skill of the
-                    others. No one can whistle a symphony. It takes an orchestra
-                    to play it.
+                    Teamwork is so important that it is virtually impossible for
+                    you to reach the heights of your capabilities or make the
+                    money that you want without becoming very good at it.
                   </p>
                 </CardBody>
                 <CardFooter className="text-center">
@@ -116,7 +162,7 @@ function AboutTeam() {
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <i className="fa fa-twitter" />
+                    <i className="fa fa-instagram" />
                   </Button>
                   <Button
                     className="btn-just-icon btn-neutral ml-1"
@@ -129,7 +175,7 @@ function AboutTeam() {
                   <Button
                     className="btn-just-icon btn-neutral ml-1"
                     color="link"
-                    href="#pablo"
+                    href="#"
                     onClick={(e) => e.preventDefault()}
                   >
                     <i className="fa fa-linkedin" />
@@ -137,7 +183,7 @@ function AboutTeam() {
                 </CardFooter>
               </Card>
             </Col>
-            <Col md="4">
+            <Col md="3">
               <Card className="card-profile card-plain">
                 <div className="card-avatar">
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
@@ -152,7 +198,7 @@ function AboutTeam() {
                 <CardBody>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <div className="author">
-                      <CardTitle tag="h4">Robert Orben</CardTitle>
+                      <CardTitle tag="h4">Sebastian Urueta</CardTitle>
                       <h6 className="card-category">Developer</h6>
                     </div>
                   </a>
@@ -192,7 +238,14 @@ function AboutTeam() {
               </Card>
             </Col>
           </Row>
+          <br />
         </Container>
+        <div className="footer register-footer text-center">
+          <h6>
+            © {new Date().getFullYear()}, made with{" "}
+            <i className="fa fa-heart heart" /> by Utb
+          </h6>
+        </div>
       </div>
     </>
   );}

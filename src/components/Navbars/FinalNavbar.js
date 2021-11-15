@@ -73,9 +73,9 @@ function FinalNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            to="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
+            to="/home"
+           
+           
             tag={Link}
           >
             EXPODUBAI
@@ -115,8 +115,8 @@ function FinalNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/aboutctg">
-                <i className="nc-icon nc-album-2" /> About Cartagena
+              <NavLink href="/aboutteam">
+                <i className="nc-icon nc-badge" /> About the team
               </NavLink>
             </NavItem>
             <NavItem>

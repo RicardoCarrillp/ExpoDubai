@@ -68,7 +68,7 @@ function LandingPageHeader() {
         <div className="filter" />
         <Collapse
         in={checked}
-        {...(checked ? { timeout: 1950 } : {})}
+        {...(checked ? { timeout: 900 } : {})}
         collapsedHeight={50}
         >
           <Container>

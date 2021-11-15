@@ -1,10 +1,80 @@
 import React from 'react'
+import {
+  Button,
+  Label,
+  FormGroup,
+  Input,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane,
+Form,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
+import ReactPlayer from "react-player";
+
+// core components
+import FinalNavbar from "components/Navbars/FinalNavbar.js";
+import UtbBannerHeader from "components/Headers/utbbannerHeader.js";
+import DemoFooter from "components/Footers/DemoFooter.js";
 
 function aboutUtb() {
+
     return (
-      <div>
-        <h2>soy un about utb</h2>
-      </div>
+      <>
+        <>
+          <FinalNavbar />
+          <UtbBannerHeader />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto" md="8">
+                <h2 className="title">UTB</h2>
+                <h5 className="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam ut convallis mauris, quis accumsan elit. Etiam dictum
+                  leo ut purus semper tempus. Donec elit ex, elementum vitae
+                  arcu sit amet, mattis iaculis magna. Sed et molestie arcu.
+                  Duis dictum, mauris at fermentum finibus, eros odio cursus
+                  nisl, ac rutrum magna enim eget mi. Mauris consectetur mattis
+                  convallis. Phasellus accumsan purus lacus, sed tristique dolor
+                  bibendum et. Vivamus eget vehicula lacus. Sed ut purus vitae
+                  neque pretium porta. Nulla facilisi. Donec eget urna ut metus
+                  sodales luctus id non nunc. Sed convallis mattis justo, in
+                  tristique nisi. Nullam non est euismod, bibendum felis eget,
+                  porttitor mi. Fusce vitae dui in justo hendrerit euismod vel
+                  lobortis odio. Sed ultrices sed dolor non commodo.
+                </h5>
+                <br />
+              </Col>
+            </Row>
+          </Container>
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto" md="12">
+                <ReactPlayer
+                  url="https://www.youtube.com/watch?v=SKmgT9wvcXY"
+                  className="react-player"
+                  width="100%"
+                  height="70vh"
+                />
+              </Col>
+            </Row>
+          </Container>
+          <br /> <br />
+          <DemoFooter />
+        </>
+      </>
     );
 }
 
