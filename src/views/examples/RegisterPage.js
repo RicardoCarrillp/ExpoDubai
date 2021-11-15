@@ -5,7 +5,7 @@ import React from "react";
 import { Button, Card, Form, Input, Container, Row, Col } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import FinalNavbar from "components/Navbars/FinalNavbar.js";
 
 function RegisterPage() {
   document.documentElement.classList.remove("nav-open");
@@ -17,7 +17,7 @@ function RegisterPage() {
   });
   return (
     <>
-      <ExamplesNavbar />
+      <FinalNavbar />
       <div
         className="page-header"
         style={{

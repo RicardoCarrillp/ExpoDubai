@@ -31,26 +31,38 @@ function DemoFooter() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
+                  href="https://www.utb.edu.co/#"
                   target="_blank"
+                  title="UTB Official"
                 >
-                  Creative Tim
+                  Utb
                 </a>
               </li>
               <li>
                 <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
+                  href="https://www.instagram.com/utboficial/?hl=es-la"
                   target="_blank"
+                  title="Follow us on Instagram"
                 >
-                  Blog
+                  <i className="fa fa-instagram" />
                 </a>
-              </li>
+              </li>{" "}
               <li>
                 <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
+                  href="https://www.facebook.com/utboficial"
                   target="_blank"
+                  title="Like us on Facebook"
                 >
-                  Licenses
+                  <i className="fa fa-facebook-square" />
+                </a>
+              </li>{" "}
+              <li>
+                <a
+                  href="https://twitter.com/utboficial"
+                  target="_blank"
+                  title="Follow us on Twitter"
+                >
+                  <i className="fa fa-twitter" />
                 </a>
               </li>
             </ul>
@@ -58,7 +70,7 @@ function DemoFooter() {
           <div className="credits ml-auto">
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
+              <i className="fa fa-heart heart" /> by Utb Team.
             </span>
           </div>
         </Row>

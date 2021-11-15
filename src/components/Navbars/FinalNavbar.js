@@ -33,7 +33,7 @@ import {
   Button,
 } from "reactstrap";
 
-function ExamplesNavbar() {
+function FinalNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
@@ -99,10 +99,7 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink
-                href="https://www.utb.edu.co/#"
-                target="_blank"
-              >
+              <NavLink href="https://www.utb.edu.co/#" target="_blank">
                 <i className="nc-icon nc-book-bookmark" /> UTB
               </NavLink>
             </NavItem>
@@ -152,17 +149,14 @@ function ExamplesNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                href="#"
-                target="_blank"
-              >
+              <NavLink href="#" target="_blank">
                 <i className="nc-icon nc-album-2" /> About Cartagena
               </NavLink>
             </NavItem>
             <NavItem>
               <Button
                 className="btn-round"
-                color="primary"
+                color="success"
                 href="#"
                 target="_blank"
               >
@@ -186,4 +180,4 @@ function ExamplesNavbar() {
   );
 }
 
-export default ExamplesNavbar;
+export default FinalNavbar;
