@@ -1,28 +1,10 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import React from "react";
-
-// reactstrap components
+import React, { useEffect, useState } from 'react';
 import { Button, Container } from "reactstrap";
-
-// core components
-
+import {IconButton, Collapse } from '@material-ui/core';
+import {makeStyles} from '@material-ui/core/styles';
+import { Link as Scroll } from 'react-scroll';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Powerslap from "../../assets/video/utb2.mp4";
 function LandingPageHeader() {
   let pageHeader = React.createRef();
 
@@ -39,39 +21,79 @@ function LandingPageHeader() {
       };
     }
   });
+  const useStyles= makeStyles((theme)=>({
+    appbar: {
+      fontFamily:"Nunito",
+    },
+    greentext:{
+      color:"#5AFF3D",
+      fontFamily:"Nunito",
+    },
+    goDown: {
+      color: '#5AFF3D',
+      fontSize: '3rem',
+    }
+  }));
 
+  const classes=useStyles();
+
+  const [checked, setChecked] = useState(false);
+  useEffect(() => {
+    setChecked(true);
+  }, []);
   return (
     <>
       <div
-        style={{
-          backgroundImage:
-            "url(" + require("assets/img/daniel-olahh.jpg").default + ")",
-        }}
         className="page-header"
         data-parallax={true}
         ref={pageHeader}
       >
+      <video 
+        autoPlay 
+        loop 
+        muted
+        style={{
+          position: "absolute",
+          width: "100%",
+          left: "50%",
+          top: "50%",
+          height: "100%",
+          objectFit: "cover",
+          transform: "translate(-50%, -50%)",
+          zIndex: "-1"
+        }}
+        >
+          <source src={Powerslap} type="video/mp4" />
+          </video>
         <div className="filter" />
-        <Container>
+        <Collapse
+        in={checked}
+        {...(checked ? { timeout: 1950 } : {})}
+        collapsedHeight={50}
+        >
+          <Container>
           <div className="motto text-center">
-            <h1>Example page</h1>
-            <h3>Start designing your landing page here.</h3>
+            <h1 className={classes.appbar}>Universidad </h1><h1 className = {classes.greentext}>Tecnologica De Bolivar.</h1>
+            <h3 className={classes.appbar}>Te damos la bienvenida a un mundo de conocimiento UTB para tu vida.</h3>
             <br />
             <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="https://www.youtube.com/watch?v=FkfKqE9dFZ4&ab_channel=UniversidadTecnol%C3%B3gicadeBol%C3%ADvar"
               className="btn-round mr-1"
               color="neutral"
               target="_blank"
               outline
             >
               <i className="fa fa-play" />
-              Watch video
+              Nuestro campus.
             </Button>
-            <Button className="btn-round" color="neutral" type="button" outline>
-              Download
-            </Button>
+            <Scroll to="place-to-visit" smooth={true}>
+            <IconButton>
+              <ExpandMoreIcon className={classes.goDown} />
+            </IconButton>
+          </Scroll>
           </div>
-        </Container>
+          </Container>
+        </Collapse>
       </div>
     </>
   );

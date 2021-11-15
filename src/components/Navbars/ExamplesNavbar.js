@@ -78,7 +78,7 @@ function ExamplesNavbar() {
             title="Coded by Creative Tim"
             tag={Link}
           >
-            Paper Kit 2
+            EXPODUBAI
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -99,22 +99,18 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
-              </NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
+                href="https://www.utb.edu.co/#"
                 target="_blank"
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
+                <i className="nc-icon nc-book-bookmark" /> UTB
               </NavLink>
             </NavItem>
+            {/*
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
+                href="https://twitter.com/utboficial"
                 target="_blank"
                 title="Follow us on Twitter"
               >
@@ -125,7 +121,7 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                href="https://www.facebook.com/utboficial"
                 target="_blank"
                 title="Like us on Facebook"
               >
@@ -136,7 +132,7 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                href="https://www.instagram.com/utboficial/?hl=es-la"
                 target="_blank"
                 title="Follow us on Instagram"
               >
@@ -144,25 +140,43 @@ function ExamplesNavbar() {
                 <p className="d-lg-none">Instagram</p>
               </NavLink>
             </NavItem>
+            */}
+            <NavItem>
+              <NavLink href="#" target="_blank">
+                <i className="nc-icon nc-alert-circle-i" /> About the university
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#" target="_blank">
+                <i className="nc-icon nc-chart-pie-36" /> The UTB at glance
+              </NavLink>
+            </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
+                href="#"
                 target="_blank"
-                title="Star on GitHub"
               >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
+                <i className="nc-icon nc-album-2" /> About Cartagena
               </NavLink>
             </NavItem>
             <NavItem>
               <Button
                 className="btn-round"
-                color="danger"
-                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
+                color="primary"
+                href="#"
                 target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
+                <i className="nc-icon nc-book-bookmark"></i> Quiz
+              </Button>
+            </NavItem>
+            <NavItem>
+              <Button
+                className="btn-round"
+                color="danger"
+                href="https://orbix360.com/zZ4CMYmm-"
+                target="_blank"
+              >
+                <i className="nc-icon nc-spaceship"></i> Tour VR
               </Button>
             </NavItem>
           </Nav>

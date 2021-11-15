@@ -91,6 +91,14 @@ function IndexNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
+          <NavItem>
+              <NavLink
+                href="https://www.utb.edu.co/#"
+                target="_blank"
+              >
+                <i className="nc-icon nc-book-bookmark" /> UTB
+              </NavLink>
+            </NavItem>
             {/* <NavItem>
               <NavLink
                 data-placement="bottom"

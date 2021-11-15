@@ -68,7 +68,7 @@ function LandingPage() {
                     <i className="nc-icon nc-album-2" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
+                    <h4 className="info-title">About Cartagena</h4>
                     <p className="description">
                       Spend your time generating new ideas. You don't have to
                       think of implementing.
