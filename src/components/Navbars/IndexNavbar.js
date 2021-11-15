@@ -71,7 +71,7 @@ function IndexNavbar() {
             target="_blank"
             title="Coded by Creative Tim"
           >
-            Paper Kit React
+            ExpoDubai
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -91,7 +91,7 @@ function IndexNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
+            {/* <NavItem>
               <NavLink
                 data-placement="bottom"
                 href="https://twitter.com/CreativeTim?ref=creativetim"
@@ -134,23 +134,44 @@ function IndexNavbar() {
                 <i className="fa fa-github" />
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
+            </NavItem> */}
+            <NavItem>
+              <NavLink href="#" target="_blank">
+                <i className="nc-icon nc-alert-circle-i" /> About the university
+              </NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="#" target="_blank">
+                <i className="nc-icon nc-chart-pie-36" /> The UTB at glance
+              </NavLink>
+            </NavItem>
+
+            <NavItem>
               <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
+                href="#"
                 target="_blank"
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
+                <i className="nc-icon nc-album-2" /> About Cartagena
               </NavLink>
             </NavItem>
             <NavItem>
               <Button
                 className="btn-round"
-                color="danger"
-                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-index-navbar"
+                color="primary"
+                href="#"
                 target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
+                <i className="nc-icon nc-book-bookmark"></i> Quiz
+              </Button>
+            </NavItem>
+            <NavItem>
+              <Button
+                className="btn-round"
+                color="danger"
+                href="https://orbix360.com/zZ4CMYmm-"
+                target="_blank"
+              >
+                <i className="nc-icon nc-spaceship"></i> Tour VR
               </Button>
             </NavItem>
           </Nav>
