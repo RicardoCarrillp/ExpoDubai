@@ -20,9 +20,6 @@ function aboutUtb() {
           <FinalNavbarAboutTeam />
           <UtbBannerHeader />
           <br />
-       
-      
-         
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
@@ -53,6 +50,7 @@ function aboutUtb() {
                   url="https://www.youtube.com/watch?v=SKmgT9wvcXY"
                   className="react-player"
                   width="100%"
+                  playing="true"
                   height="70vh"
                 />
               </Col>

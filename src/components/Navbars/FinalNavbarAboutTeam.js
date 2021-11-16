@@ -106,7 +106,7 @@ function FinalNavbarAboutTeam() {
             </NavItem>
 
             <NavItem>
-              <NavLink >
+              <NavLink href="/aboututb">
                 <i className="nc-icon nc-alert-circle-i" /> About the university
               </NavLink>
             </NavItem>
