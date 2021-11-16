@@ -25,7 +25,7 @@ import RegisterPage from "views/examples/RegisterPage.js";
 // others
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter >
     <Switch>
       <Route path="/home" render={(props) => <Home {...props} />} />
       <Route path="/indexpaper" render={(props) => <Index {...props} />} />
