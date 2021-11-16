@@ -37,7 +37,7 @@ ReactDOM.render(
       <Route path="/intenacionalcoop" render={(props) => <InternacionalCoop {...props} />} />
       <Route path="/aboutteam" render={(props) => <AboutTeam {...props} />} />
       <Route
-        path="/nucleo-icons"
+        path="/nucleo-icons" 
         render={(props) => <NucleoIcons {...props} />}
       />
       {/* <Route
