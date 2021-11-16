@@ -1,3 +1,4 @@
+import UtbBannerHeader from 'components/Headers/utbbannerHeader';
 import FinalNavbar from 'components/Navbars/FinalNavbar';
 import React from 'react'
 import img0 from '../img/1.jpeg'
@@ -17,10 +18,16 @@ function utbAtG() {
    
       <div class="utbatg">
         <FinalNavbar/>
+        <UtbBannerHeader/>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
 
 
       
-        <div>
+        <div className="content-img">
 
           <img src={img0} alt="" />
           <img src={img1} alt="" />
