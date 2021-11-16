@@ -5,7 +5,40 @@
     
 }
 
-.utbatg{
-    
+.content-img{
+    display: flex;
+    flex-direction: column;
     background-color: white;
+   
+    align-items: center;
+    justify-content: center;
 }
+
+.content-img img:nth-child(1){
+    margin-right: 1066px;
+}
+
+.content-img img:nth-child(2){
+    margin-left: 1225px;
+}
+
+.content-img img:nth-child(3){
+    margin-right: 1225px;
+}
+
+.content-img img:nth-child(4){
+    margin-left: 1225px;
+}
+
+.content-img img:nth-child(5){
+    margin-right: 1225px;
+}
+
+.content-img img:nth-child(6){
+    margin-left: 1225px;
+}
+
+.content-img img:nth-child(7){
+    margin-right: 1225px;
+}
+
