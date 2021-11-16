@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1fbe5fb1-f736-44e7-955f-72754edc7c18/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/utbexpodubai",
+    "appService.deploySubpath": "."
+}
