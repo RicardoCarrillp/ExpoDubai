@@ -7,27 +7,22 @@ import {
   CardBody,
   CardFooter,
   CardTitle,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+
   Container,
   Row,
   Col,
 } from "reactstrap";
 
 // core components
-import FinalNavbar from "components/Navbars/FinalNavbar.js";
+import FinalNavbarAboutTeam from "components/Navbars/FinalNavbarAboutTeam.js";
 
 import AboutTeamHeader from "components/Headers/aboutTeamHeader.js";
-import DemoFooter from "components/Footers/DemoFooter";
 
 function AboutTeam() {
 
   return (
     <>
-      <FinalNavbar />
+      <FinalNavbarAboutTeam />
       <AboutTeamHeader />
 
       <div className="section section-dark text-center">
@@ -40,23 +35,20 @@ function AboutTeam() {
             <Col md="3">
               <Card className="card-profile card-plain">
                 <div className="card-avatar">
-                  <a
-                    href="https://www.linkedin.com/in/ricardo-carrillo-082117129/"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <p>
                     <img
                       alt="..."
                       src={require("assets/img/yo2.jpg").default}
                     />
-                  </a>
+                  </p>
                 </div>
                 <CardBody>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <p>
                     <div className="author">
                       <CardTitle tag="h4">Ricardo Carrillo</CardTitle>
                       <h6 className="card-category">Developer</h6>
                     </div>
-                  </a>
+                  </p>
                   <p className="card-description text-center">
                     I love Spider-Man And coding.
                   </p>
@@ -74,7 +66,6 @@ function AboutTeam() {
                     className="btn-just-icon btn-neutral ml-1"
                     color="link"
                     href="https://www.linkedin.com/in/ricardo-carrillo-082117129/"
-                    
                   >
                     <i className="fa fa-linkedin" />
                   </Button>
@@ -84,20 +75,20 @@ function AboutTeam() {
             <Col md="3">
               <Card className="card-profile card-plain">
                 <div className="card-avatar">
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <p>
                     <img
                       alt="..."
                       src={require("assets/img/isaac.jpeg").default}
                     />
-                  </a>
+                  </p>
                 </div>
                 <CardBody>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <p>
                     <div className="author">
                       <CardTitle tag="h4">Isaac Castelar</CardTitle>
                       <h6 className="card-category">Developer</h6>
                     </div>
-                  </a>
+                  </p>
                   <p className="card-description text-center">
                     Teamwork is so important that it is virtually impossible for
                     you to reach the heights of your capabilities or make the
@@ -109,23 +100,14 @@ function AboutTeam() {
                     className="btn-just-icon btn-neutral"
                     color="link"
                     href="#pablo"
-                    onClick={(e) => e.preventDefault()}
                   >
-                    <i className="fa fa-twitter" />
+                    <i className="fa fa-instagram" />
                   </Button>
+
                   <Button
                     className="btn-just-icon btn-neutral ml-1"
                     color="link"
                     href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <i className="fa fa-google-plus" />
-                  </Button>
-                  <Button
-                    className="btn-just-icon btn-neutral ml-1"
-                    color="link"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
                   >
                     <i className="fa fa-linkedin" />
                   </Button>
@@ -135,20 +117,20 @@ function AboutTeam() {
             <Col md="3">
               <Card className="card-profile card-plain">
                 <div className="card-avatar">
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <p>
                     <img
                       alt="..."
                       src={require("assets/img/elian.jpg").default}
                     />
-                  </a>
+                  </p>
                 </div>
                 <CardBody>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <p>
                     <div className="author">
                       <CardTitle tag="h4">Elian Vega</CardTitle>
                       <h6 className="card-category">Developer</h6>
                     </div>
-                  </a>
+                  </p>
                   <p className="card-description text-center">
                     Teamwork is so important that it is virtually impossible for
                     you to reach the heights of your capabilities or make the
@@ -160,23 +142,14 @@ function AboutTeam() {
                     className="btn-just-icon btn-neutral"
                     color="link"
                     href="#pablo"
-                    onClick={(e) => e.preventDefault()}
                   >
                     <i className="fa fa-instagram" />
                   </Button>
-                  <Button
-                    className="btn-just-icon btn-neutral ml-1"
-                    color="link"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <i className="fa fa-google-plus" />
-                  </Button>
+
                   <Button
                     className="btn-just-icon btn-neutral ml-1"
                     color="link"
                     href="#"
-                    onClick={(e) => e.preventDefault()}
                   >
                     <i className="fa fa-linkedin" />
                   </Button>
@@ -186,22 +159,22 @@ function AboutTeam() {
             <Col md="3">
               <Card className="card-profile card-plain">
                 <div className="card-avatar">
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <p>
                     <img
                       alt="..."
                       src={
                         require("assets/img/faces/erik-lucatero-2.jpg").default
                       }
                     />
-                  </a>
+                  </p>
                 </div>
                 <CardBody>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <p>
                     <div className="author">
                       <CardTitle tag="h4">Sebastian Urueta</CardTitle>
                       <h6 className="card-category">Developer</h6>
                     </div>
-                  </a>
+                  </p>
                   <p className="card-description text-center">
                     The strength of the team is each individual member. The
                     strength of each member is the team. If you can laugh
@@ -214,23 +187,14 @@ function AboutTeam() {
                     className="btn-just-icon btn-neutral"
                     color="link"
                     href="#pablo"
-                    onClick={(e) => e.preventDefault()}
                   >
-                    <i className="fa fa-twitter" />
+                    <i className="fa fa-instagram" />
                   </Button>
+
                   <Button
                     className="btn-just-icon btn-neutral ml-1"
                     color="link"
                     href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <i className="fa fa-google-plus" />
-                  </Button>
-                  <Button
-                    className="btn-just-icon btn-neutral ml-1"
-                    color="link"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
                   >
                     <i className="fa fa-linkedin" />
                   </Button>
@@ -243,8 +207,58 @@ function AboutTeam() {
         <div className="footer register-footer text-center">
           <h6>
             © {new Date().getFullYear()}, made with{" "}
-            <i className="fa fa-heart heart" /> by Utb
+            <i className="fa fa-heart heart" /> by Utb Team.
           </h6>
+          {/* <Container>
+            <Row>
+              <nav className="footer-nav">
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.utb.edu.co/#"
+                      target="_blank"
+                      title="UTB Official"
+                    >
+                      Utb
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/utboficial/?hl=es-la"
+                      target="_blank"
+                      title="Follow us on Instagram"
+                    >
+                      <i className="fa fa-instagram" />
+                    </a>
+                  </li>{" "}
+                  <li>
+                    <a
+                      href="https://www.facebook.com/utboficial"
+                      target="_blank"
+                      title="Like us on Facebook"
+                    >
+                      <i className="fa fa-facebook-square" />
+                    </a>
+                  </li>{" "}
+                  <li>
+                    <a
+                      href="https://twitter.com/utboficial"
+                      target="_blank"
+                      title="Follow us on Twitter"
+                    >
+                      <i className="fa fa-twitter" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div className="credits ml-auto">
+                <span className="copyright">
+                  © {new Date().getFullYear()}, made with{" "}
+                  <i className="fa fa-heart heart" /> by Utb Team.
+                </span>
+              </div>
+            </Row>
+          </Container> */}
         </div>
       </div>
     </>

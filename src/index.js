@@ -40,18 +40,18 @@ ReactDOM.render(
         path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
       />
-      <Route
+      {/* <Route
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}
-      />
-      <Route
+      /> */}
+      {/* <Route
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}
       />
       <Route
         path="/register-page"
         render={(props) => <RegisterPage {...props} />}
-      />
+      /> */}
       <Redirect to="/home" />
     </Switch>
   </BrowserRouter>,

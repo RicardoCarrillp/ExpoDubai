@@ -1,18 +1,6 @@
 import React from 'react'
 import {
-  Button,
-  Label,
-  FormGroup,
-  Input,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-Form,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+
   Container,
   Row,
   Col,
@@ -20,7 +8,7 @@ Form,
 import ReactPlayer from "react-player";
 
 // core components
-import FinalNavbar from "components/Navbars/FinalNavbar.js";
+import FinalNavbarAboutTeam from "components/Navbars/FinalNavbarAboutTeam.js";
 import UtbBannerHeader from "components/Headers/utbbannerHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 
@@ -29,13 +17,12 @@ function aboutUtb() {
     return (
       <>
         <>
-          <FinalNavbar />
+          <FinalNavbarAboutTeam />
           <UtbBannerHeader />
           <br />
-          <br />
-          <br />
-          <br />
-          <br />
+       
+      
+         
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
