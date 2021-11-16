@@ -36,7 +36,7 @@ ReactDOM.render(
       <Route path="/programff" render={(props) => <ProgramFF {...props} />} />
       <Route path="/intenacionalcoop" render={(props) => <InternacionalCoop {...props} />} />
       <Route path="/aboutteam" render={(props) => <AboutTeam {...props} />} />
-      <Route
+      <Route 
         path="/nucleo-icons" 
         render={(props) => <NucleoIcons {...props} />}
       />
