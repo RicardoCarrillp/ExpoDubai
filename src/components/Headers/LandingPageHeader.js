@@ -44,7 +44,7 @@ function LandingPageHeader() {
   }, []);
   return (
     <>
-      <div className="page-header" data-parallax={true} ref={pageHeader}>
+      <div className="page-header" data-parallax={true} ref={pageHeader} id="header">
         <video
           autoPlay
           loop
@@ -65,8 +65,8 @@ function LandingPageHeader() {
         <div className="filter" />
         <Collapse
           in={checked}
-          {...(checked ? { timeout: 3000 } : {})}
-          collapsedHeight={1}
+          {...(checked ? { timeout: 2000 } : {})}
+          collapsedHeight={60}
         >
           <Container>
             <div className="motto text-center">

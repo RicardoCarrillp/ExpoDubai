@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Collapse } from '@material-ui/core';
+import useWindowPosition from './useWindowPosition';
 
 // reactstrap components
 import {
@@ -34,16 +35,23 @@ function Home() {
     setChecked(true);
   }, []);
 
+  const checked2 = useWindowPosition('header');
+
   return (
     <>
       <FinalNavbar />
       <LandingPageHeader />
-      <div className="main">
+      <div className="main" id="place-to-visit">
         <div className="section text-center">
         <Collapse
-        in={checked}
-        {...(checked ? { timeout: 3950 } : {})}
-        collapsedHeight={200}
+        in={checked2}
+        {...(checked2 ? { timeout: 2050 } : {})}
+        collapsedHeight={100}
+        >
+          <Collapse
+          in={checked}
+          {...(checked ? { timeout: 1050 } : {})}
+          collapsedHeight={50}
         >
           <Container>
             <Row>
@@ -215,6 +223,7 @@ function Home() {
               </Col>
             </Row>
           </Container>
+          </Collapse>
           </Collapse>
         </div>
 
