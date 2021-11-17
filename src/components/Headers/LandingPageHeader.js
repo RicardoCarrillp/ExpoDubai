@@ -44,59 +44,52 @@ function LandingPageHeader() {
   }, []);
   return (
     <>
-      <div
-        className="page-header"
-        data-parallax={true}
-        ref={pageHeader}
-      >
-      <video 
-        autoPlay 
-        loop 
-        muted
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "50%",
-          height: "100%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: "-1"
-        }}
+      <div className="page-header" data-parallax={true} ref={pageHeader}>
+        <video
+          autoPlay
+          loop
+          muted
+          style={{
+            position: "absolute",
+            width: "100%",
+            left: "50%",
+            top: "50%",
+            height: "100%",
+            objectFit: "cover",
+            transform: "translate(-50%, -50%)",
+            zIndex: "-1",
+          }}
         >
           <source src={Powerslap} type="video/mp4" />
-          </video>
+        </video>
         <div className="filter" />
         <Collapse
-        in={checked}
-        {...(checked ? { timeout: 3000 } : {})}
-        collapsedHeight={1}
+          in={checked}
+          {...(checked ? { timeout: 3000 } : {})}
+          collapsedHeight={1}
         >
           <Container>
-          <div className="motto text-center">
-             <img src={logo}
-               height="260px" 
-            width="666px"
-          /> 
-          <br/>
-           {/* <h3 className={classes.appbar}>Te damos la bienvenida a un mundo de conocimiento UTB para tu vida.</h3>*/}
-            <br />
-            <Button
-              href="https://www.youtube.com/watch?v=FkfKqE9dFZ4&ab_channel=UniversidadTecnol%C3%B3gicadeBol%C3%ADvar"
-              className="btn-round mr-1"
-              color="neutral"
-              target="_blank"
-              outline
-            >
-              <i className="fa fa-play" />
-              Nuestro campus.
-            </Button>
-            <Scroll to="place-to-visit" smooth={true}>
-            <IconButton>
-              <ExpandMoreIcon className={classes.goDown} />
-            </IconButton>
-          </Scroll>
-          </div>
+            <div className="motto text-center">
+              <img src={logo} height="50%" width="50%" />
+              <br />
+              {/* <h3 className={classes.appbar}>Te damos la bienvenida a un mundo de conocimiento UTB para tu vida.</h3>*/}
+              <br />
+              <Button
+                href="https://www.youtube.com/watch?v=FkfKqE9dFZ4&ab_channel=UniversidadTecnol%C3%B3gicadeBol%C3%ADvar"
+                className="btn-round mr-1"
+                color="neutral"
+                target="_blank"
+                outline
+              >
+                <i className="fa fa-play" />
+                Nuestro campus.
+              </Button>
+              <Scroll to="place-to-visit" smooth={true}>
+                <IconButton>
+                  <ExpandMoreIcon className={classes.goDown} />
+                </IconButton>
+              </Scroll>
+            </div>
           </Container>
         </Collapse>
       </div>
