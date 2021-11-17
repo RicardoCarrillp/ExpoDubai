@@ -5,6 +5,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import { Link as Scroll } from 'react-scroll';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Powerslap from "../../assets/video/utb2.mp4";
+import logo from "../../assets/img/logoblanco.png";
 function LandingPageHeader() {
   let pageHeader = React.createRef();
 
@@ -26,7 +27,7 @@ function LandingPageHeader() {
       fontFamily:"Nunito",
     },
     greentext:{
-      color:"#5AFF3D",
+      color:"#18B0D1 ",
       fontFamily:"Nunito",
     },
     goDown: {
@@ -68,13 +69,17 @@ function LandingPageHeader() {
         <div className="filter" />
         <Collapse
         in={checked}
-        {...(checked ? { timeout: 900 } : {})}
-        collapsedHeight={50}
+        {...(checked ? { timeout: 3000 } : {})}
+        collapsedHeight={1}
         >
           <Container>
           <div className="motto text-center">
-            <h1 className={classes.appbar}>Universidad </h1><h1 className = {classes.greentext}>Tecnologica De Bolivar.</h1>
-            <h3 className={classes.appbar}>Te damos la bienvenida a un mundo de conocimiento UTB para tu vida.</h3>
+             <img src={logo}
+               height="260px" 
+            width="666px"
+          /> 
+          <br/>
+           {/* <h3 className={classes.appbar}>Te damos la bienvenida a un mundo de conocimiento UTB para tu vida.</h3>*/}
             <br />
             <Button
               href="https://www.youtube.com/watch?v=FkfKqE9dFZ4&ab_channel=UniversidadTecnol%C3%B3gicadeBol%C3%ADvar"

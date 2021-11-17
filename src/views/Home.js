@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import { Collapse } from '@material-ui/core';
 
 // reactstrap components
 import {
@@ -27,12 +28,23 @@ function Home() {
       document.body.classList.remove("profile-page");
     };
   });
+
+  const [checked, setChecked] = useState(false);
+  useEffect(() => {
+    setChecked(true);
+  }, []);
+
   return (
     <>
       <FinalNavbar />
       <LandingPageHeader />
       <div className="main">
         <div className="section text-center">
+        <Collapse
+        in={checked}
+        {...(checked ? { timeout: 3950 } : {})}
+        collapsedHeight={200}
+        >
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
@@ -203,6 +215,7 @@ function Home() {
               </Col>
             </Row>
           </Container>
+          </Collapse>
         </div>
 
         <div className="section landing-section">

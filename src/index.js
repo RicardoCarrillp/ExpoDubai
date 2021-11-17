@@ -25,7 +25,7 @@ import RegisterPage from "views/examples/RegisterPage.js";
 // others
 
 ReactDOM.render(
-  <BrowserRouter >
+  <BrowserRouter>
     <Switch>
       <Route path="/home" render={(props) => <Home {...props} />} />
       <Route path="/indexpaper" render={(props) => <Index {...props} />} />
@@ -36,8 +36,8 @@ ReactDOM.render(
       <Route path="/programff" render={(props) => <ProgramFF {...props} />} />
       <Route path="/intenacionalcoop" render={(props) => <InternacionalCoop {...props} />} />
       <Route path="/aboutteam" render={(props) => <AboutTeam {...props} />} />
-      <Route 
-        path="/nucleo-icons" 
+      <Route
+        path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
       />
       {/* <Route

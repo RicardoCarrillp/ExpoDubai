@@ -1,5 +1,4 @@
-
-import React from "react";
+import React from 'react';
 
 // reactstrap components
 import {
@@ -31,6 +30,7 @@ function LandingPage() {
       document.body.classList.remove("profile-page");
     };
   });
+
   return (
     <>
       <FinalNavbar />
