@@ -56,7 +56,6 @@ function Home() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Menu</h2>
                 {/* <h5 className="description">
               
                 </h5>
